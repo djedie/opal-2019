@@ -9,7 +9,7 @@
   </div>
   <ul class="list-unstyled links-list">
     <li><a href="/vision.php">La vision d'Opal</a></li>
-    <li><a href="/photos.php">Les photos 2017</a></li>
+    <li><a href="/photos.php">Les photos 2017-2018</a></li>
     <li><a href="http://opal-festival.com/wiki/index.php?title=Accueil#FAQ" target="_blank">FAQ</a></li>
     <li><a href="http://opal.events/wiki" target="_blank">Wiki</a></li>
     <li><a href="#" class="email">Contacte-nous</a></li>
