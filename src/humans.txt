@@ -1,0 +1,16 @@
+/* TEAM */
+
+Design: Christophe Mendes
+Site: http://www.littlebigdesign.fr
+Location: Paris, France
+
+Development: Antoine Guillou
+Site: https://antoineguillou.fr
+Twitter: @starfennec
+Location: Paris, France
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: jQuery, Isotope
+Software: Sketch, Zeplin, Atom, Gulp

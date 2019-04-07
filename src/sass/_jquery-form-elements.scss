@@ -1,0 +1,371 @@
+//========================================================
+// FORMS
+//========================================================
+
+.form-element {
+    @include size(100%, auto);
+    font-size: $fe_fontsize;
+    line-height: $fe_lineheight;
+    margin: 0 0 25px;
+    position: relative;
+
+    .form-element-label{
+        display: block;
+    }
+    input[type="text"],
+    input[type="radio"],
+    input[type="checkbox"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+        @include size(100%, $fe_lineheight);
+        border-radius: $fe_borderradius;
+        @include placeholder($fe_placeholder);
+        color: $fe_primary;
+        display: block;
+        font-size: $fe_fontsize;
+        line-height: $fe_lineheight;
+        border: 1px solid $fe_border;
+        padding: 0 12px 0;
+        background-color: $fe_background;
+        appearance: none;
+    }
+    select {
+        @include size(100%, $fe_lineheight);
+        border-radius: $fe_borderradius;
+        color: $fe_primary;
+        border: 1px solid $fe_border;
+        font-size: $fe_fontsize;
+        line-height: $fe_lineheight;
+        padding-left: 10px;
+        padding-right: 20px;
+        margin: 0 0 0;
+        background-color: $fe_background;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+    textarea{
+        border: 1px solid $fe_border;
+        border-radius: $fe_borderradius;
+        @include placeholder($fe_placeholder);
+        font-size: $fe_fontsize;
+        line-height: $fe_lineheight;
+        min-height: 50px;
+        width: 100%;
+        padding: 6px 12px;
+        resize: vertical;
+        background-color: $fe_background;
+        appearance: none;
+    }
+    input, textarea, select{
+        transition: background-color .1s ease, border-color .1s ease;
+
+        &:focus{
+            background-color: lighten($fe_background, 3%);
+            border-color: darken($fe_border, 5%);
+            outline: none;
+        }
+    }
+    input[type="submit"] {
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active{
+        background-color: lighten($fe_background, 3%);
+      }
+    }
+
+    //========================================================
+    // INPUT RADIO NORMAUX
+    //========================================================
+
+    input[type="radio"] {
+        display:none;
+        &.error {
+            @include placeholder($fe_error);
+        }
+    }
+    input[type="radio"] + label span.radio-btn {
+        background-color: $fe_background;
+        border: 1px solid $fe_border;
+        vertical-align: middle;
+        display:inline-block;
+        margin: 0 5px 0 0;
+        position: relative;
+        @include circle(20px);
+        //@include sprite(7, 8, 16px, 16px);
+
+        &:before{
+            background: $fe_primary;
+            content: "";
+            transition: all .1s ease;
+            transform-origin: 50% 50%;
+            @include absolute-center();
+            @include circle(10px);
+            transform: translate(-50%, -50%) scale(0);
+
+        }
+    }
+    input[type="radio"] + label span.text {
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+    }
+    input[type="radio"]:checked + label span.radio-btn {
+        //@include sprite(7, 6, 16px, 16px);
+
+        &:before{
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    input[type="radio"]:checked + label span.text {
+    }
+
+    //========================================================
+    // Custom Radio
+    //========================================================
+
+    input[type="radio"].custom-radio {
+        display:none;
+    }
+    input[type="radio"].custom-radio + label span.text {
+        vertical-align: middle;
+    }
+    input[type="radio"].custom-radio + label span.radio-btn {
+        vertical-align: middle;
+        display:inline-block;
+        margin: 0 14px 0 0;
+        //@include retina-sprite($sprite-input-radio-group);
+    }
+    input[type="radio"].custom-radio:checked + label span.text {
+    }
+    input[type="radio"].custom-radio:checked + label span.radio-btn {
+        //@include retina-sprite($sprite-input-radio-group);
+    }
+
+    //========================================================
+    // Custom Checkbox
+    //========================================================
+
+    input[type="checkbox"].custom-checkbox {
+        //display:none;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        //visibility: hidden;
+        @include size(0, 0);
+
+        &:focus + label span.checkbox-btn{
+            background-color: lighten($fe_background, 3%);
+            border-color: darken($fe_border, 5%);
+        }
+    }
+    input[type="checkbox"].custom-checkbox + label span.text {
+        vertical-align: middle;
+    }
+    input[type="checkbox"].custom-checkbox + label span.checkbox-btn {
+        border-radius: $fe_borderradius;
+        background-color: $fe_background;
+        border: 1px solid $fe_border;
+        vertical-align: middle;
+        display:inline-block;
+        margin: 0 10px 0 0;
+        position: relative;
+        @include square(20px);
+
+        svg{
+            @include absolute-center();
+            @include size(16px, 16px);
+
+            path{
+                fill: $fe_primary;
+                transition: all .1s ease;
+                transform-origin: 50% 50%;
+                transform: scale(0);
+            }
+        }
+    }
+    input[type="checkbox"].custom-checkbox:checked + label span.text {
+    }
+    input[type="checkbox"].custom-checkbox:checked + label span.checkbox-btn {
+        svg path{
+            transform: scale(1);
+        }
+    }
+
+    //========================================================
+    // CUSTOM SELECT
+    //========================================================
+
+    .form-element-dropdown{
+        position: relative;
+
+        &.active{
+            a{
+                background-color: lighten($fe_background, 3%);
+                border-color: darken($fe_border, 5%);
+            }
+            ul{
+                display: block;
+            }
+        }
+        a{
+            @include size(100%, $fe_lineheight);
+            border-radius: $fe_borderradius;
+            color: #454545;
+            cursor: default;
+            display: inline-block;
+            //text-transform: uppercase;
+            border: 1px solid $fe_border;
+            padding-left: 15px;
+            padding-right: 20px;
+            line-height: 32px;
+            position: relative;
+            text-decoration: none;
+            background-color: $fe_background;
+            transition: background-color .1s ease, border-color .1s ease;
+
+            &:after{
+                border: 5px solid transparent;
+                border-top-color: $fe_primary;
+                content: "";
+                margin-top: -2px;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                @include size(0, 0);
+            }
+        }
+        ul{
+            background-color: $fe_background;
+            border: 1px solid $fe_border;
+            border-radius: $fe_borderradius;
+            display: none;
+            left: 0;
+            list-style: none;
+            margin: 0;
+            min-width: 100%;
+            overflow-y: auto;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            z-index: 1;
+
+            li{
+                padding: 0 15px;
+
+                &:hover{
+                    background-color: lighten($fe_background, 3%);
+                }
+                &.selected{
+                  display: none;
+                }
+            }
+        }
+    }
+
+    //========================================================
+    // INPUT FILE
+    //========================================================
+
+    input[type="file"].input-file-hidden{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    input[type="file"] + .form-element-inputfile{
+        @include size(100%, $fe_lineheight);
+        border-radius: $fe_borderradius;
+        cursor: pointer;
+        color: $fe_primary;
+        display: block;
+        font-size: $fe_fontsize;
+        line-height: $fe_lineheight;
+        border: 1px solid $fe_border;
+        padding: 0 12px 0 $fe_lineheight;
+        position: relative;
+        background-color: $fe_background;
+        appearance: none;
+
+
+        &:before{
+            background : transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODdGQUFDOTI4MEZCMTFFN0FGNjk5QzI1NzJBREMzRjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODdGQUFDOTM4MEZCMTFFN0FGNjk5QzI1NzJBREMzRjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4N0ZBQUM5MDgwRkIxMUU3QUY2OTlDMjU3MkFEQzNGMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4N0ZBQUM5MTgwRkIxMUU3QUY2OTlDMjU3MkFEQzNGMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhhTqOIAAAKySURBVHja7JpPSJRBGMbX0tCDhPgHybOipGaglomIFwU9Ch3Di25EdCjyqnXoIh5EolY6dE2EDnrwz030IiJKB4VKDx6sQM1CChPW54VX+PhwW3e+71vnW58HHoYdvpmd/e3MO+/MblY8Ho9QiXWFCAiIgAiIgAiIgAiIgCgCIiACIiACIiACIiCKgAiIgAiIgEKh7IseQDQadVeVwrXwdVh+k9qG1+C/Z7WPxWKZDcihBrgHboOrHPW/4U/wR/gd/POyLbFceAxegh+54Ijy4XvwEPwZfnhpAGF5laBYhnvP2aQIfgO/zXhAgCPLewG+adIcHsn0GfQeLvfQ/gncFfQgs4L+8wJmiuxGj+F2uERjzQb8yofuv8E3sJMF9iGyA4ZTj2JSt+5TVfr4FtJvNzwRuiUGOIUo5l1wgtD9sMagZ3BeGmLZrdABwuypRvEgTcG+IFRBGnBea8Jnqj8pzrx/8LDmUwsI2N+tBOTIa+546GYG7tPMusOg/aEkkoD03EZAUx7zEtn+m+Fj3V0X4UbDvlbhVoD6ZUUMApwuj3DktN6icCJatmi9iergaZuCdL+Htus6c45c9Udav27YbxO+uB5bADUZtttSCIf/iSnN+pyJntoCKMegzSZ8G95P8ty+LplNg/eoCeth9YvMDATRg3M+L8FW7oS+pnugF3WjKHnOOGJEsb6e09O5W6O63ctW+yNNmXkggDZSPISWqU+VKLmrdlyJVBgmnVYssTGP7XcT1O957HfWFkCyFHYi9mnQCkAItpLYdWqssEUvMK5Va3YxHcxd3aFS1bUU65PpJcYz6Mfn8nWbx6DkPFWlmfWK4+iQTFd9GJ9cv36QIwrGMWDtdUemib/NExABERABERABERABUQREQAREQAREQAREQBQBERABERABhUMnAgwAeTmWxmxR2bsAAAAASUVORK5CYII=') 0 0 / 36px 36px no-repeat;
+            content: "";
+            left: 0;
+            @include absolute-center('y');
+            @include square($fe_lineheight);
+        }
+        &.form-element-inputfile-filled{
+            .form-element-inputfile-reset{
+                display: block;
+            }
+        }
+        span{
+            display: block;
+            margin-right: $fe_lineheight;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .form-element-inputfile-reset{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include square($fe_lineheight);
+
+            &:before,
+            &:after{
+                background-color: $fe_primary;;
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform-origin: 50% 50%;
+                @include size(12px, 2px);
+            }
+            &:before{
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:after{
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+
+    //========================================================
+    // INPUT ERROR
+    //========================================================
+
+    .form-element-error {
+        color: $fe_error;
+        display: none;
+    }
+    &.error {
+        .form-element-error {
+            display: block;
+            //float: right;
+            //margin: 30px 0 5px;
+        }
+        input[type="checkbox"],
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        span.radio-btn,
+        select,
+        input[type="file"] + label{
+            background-color: lighten($fe_error, 30%);
+            border: 1px solid $fe_error;
+            color: $fe_error;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+//
+// mixin for bullet proof font declaration syntax
+//
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal){
+	@font-face{
+		font-family: '#{$font-family}';
+        src: url(#{$font-filename}.woff2) format('woff2'),
+             url(#{$font-filename}.woff) format('woff');
+		// src: url(#{$font-filename}.eot);
+		// src: url(#{$font-filename}.eot?#iefix) format('embedded-opentype'),
+		// url(#{$font-filename}.woff) format('woff'),
+		// url(#{$font-filename}.ttf) format('truetype'),
+		// url(#{$font-filename}.svg##{$font-family}) format('svg');
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-stretch: $font-stretch;
+	}
+}
+@include declare-font-face('Open Sans', 'fonts/opensans-regular', 400);
+@include declare-font-face('Open Sans', 'fonts/opensans-semibold', 600);
+@include declare-font-face('Bree Serif', 'fonts/breeserif-regular', 400);
+
+// Custom variables
+
+$basecolor: #fff;
+$border: #ccc;
+$blacktext: #333;
+$placeholder: #666;
+$error: #FF4D4D;
+
+$background: #0d173a;
+$primary: #ea495d;
+$secondary: #382b81;
+$light: #e7e4d0;
+
+$quote: #699DB7;
+
+// Form Elements
+$fe_border: $border;
+$fe_background: #eee;
+$fe_primary: $blacktext;
+$fe_placeholder: $placeholder;
+$fe_error: $error;
+$fe_borderradius: 4px;
+
+$fe_fontsize: 14px;
+$fe_lineheight: 36px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 892px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 860px,
+  xl: 1140px
+);

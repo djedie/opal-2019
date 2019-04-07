@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="872px" height="376px" viewBox="0 0 872 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>LUNE</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1029" height="536"></rect>
+        <radialGradient cx="41.2448182%" cy="46.8540737%" fx="41.2448182%" fy="46.8540737%" r="24.4522482%" gradientTransform="translate(0.412448,0.468541),rotate(-97.648648),scale(1.000000,2.433311),translate(-0.412448,-0.468541)" id="radialGradient-3">
+            <stop stop-color="#9680FF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-HOMEPAGE" transform="translate(-1404.000000, 0.000000)">
+            <g id="LUNE" transform="translate(1294.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(110.000000, -257.000000)">
+                        <g>
+                            <circle id="Oval" fill-opacity="0.400000006" fill="url(#radialGradient-3)" cx="437.5" cy="437.5" r="437.5"></circle>
+                            <g id="lune" transform="translate(349.000000, 377.000000)">
+                                <path d="M93,47 C93,72.9572368 72.181096,94 46.5,94 C20.818904,94 0,72.9572368 0,47 C0,21.0427632 20.818904,0 46.5,0 C72.181096,0 93,21.0427632 93,47" id="Fill-10" fill="#FFFFFF"></path>
+                                <path d="M71,75.5016218 C71,80.1951918 67.1951918,84 62.5016218,84 C57.8080519,84 54,80.1951918 54,75.5016218 C54,70.8080519 57.8080519,67 62.5016218,67 C67.1951918,67 71,70.8080519 71,75.5016218" id="Fill-12" fill="#BEC4BC"></path>
+                                <path d="M76,70.9981826 C76,73.2080872 74.2080872,75 71.9981826,75 C69.7919128,75 68,73.2080872 68,70.9981826 C68,68.7919128 69.7919128,67 71.9981826,67 C74.2080872,67 76,68.7919128 76,70.9981826" id="Fill-14" fill="#BEC4BC"></path>
+                                <path d="M87,63 C87,66.3133823 84.3133823,69 81,69 C77.6866177,69 75,66.3133823 75,63 C75,59.6832298 77.6866177,57 81,57 C84.3133823,57 87,59.6832298 87,63" id="Fill-16" fill="#BEC4BC"></path>
+                                <path d="M21,75.5 C21,77.4326829 19.4360976,79 17.5,79 C15.5673171,79 14,77.4326829 14,75.5 C14,73.5673171 15.5673171,72 17.5,72 C19.4360976,72 21,73.5673171 21,75.5" id="Fill-18" fill="#BEC4BC"></path>
+                                <path d="M77,61.5 C77,62.8811821 75.8811821,64 74.5,64 C73.1188179,64 72,62.8811821 72,61.5 C72,60.1188179 73.1188179,59 74.5,59 C75.8811821,59 77,60.1188179 77,61.5" id="Fill-20" fill="#BEC4BC"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
