@@ -16,7 +16,7 @@
 	<meta property="og:title" content="Opal 2019 - Créé le Festival de tes Rêves" />
 	<meta property="og:description" content="Créer ensemble un évènement culturel et artistique. Opal est un évènement, un mouvement, un moment, une construction collective où chacun est libre de s’exprimer, de créer, d’enseigner, d’apprendre, d’expérimenter et d’exercer." />
 	<meta property="og:url" content="http://opal-festival.com/" />
-	<meta property="og:image" content="http://opal-festival.com/img/facebook-share.png" />
+	<meta property="og:image" content="http://opal-festival.com/img/facebook-share-2019.png" />
 	<meta property="og:site_name" content="Opal Festival" />    
     
     <!-- http://humanstxt.org -->
@@ -59,7 +59,8 @@
         <div class="row">
           <div class="col-md-5 col-lg-6 order-md-2 d-none d-md-block">
             <div class="owl">
-              <img src="img/owl.png" srcset="img/owl@2x.png 2x" class="owl-visual" alt="">
+		      <img src="img/trains.png" srcset="img/trains@2x.png 2x" class="trains-visual" alt="Tchou tchou 🚂">
+              <img src="img/owl.png" srcset="img/owl@2x.png 2x" class="owl-visual" alt="🦉">
             </div>
           </div>
           <div class=" col-md-7 col-lg-6 order-md-1">

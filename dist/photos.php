@@ -16,7 +16,7 @@
 	<meta property="og:title" content="Les photos d'Opal 2017-2018 " />
 	<meta property="og:description" content="Créer ensemble un évènement culturel et artistique. Opal est un évènement, un mouvement, un moment, une construction collective où chacun est libre de s’exprimer, de créer, d’enseigner, d’apprendre, d’expérimenter et d’exercer." />
 	<meta property="og:url" content="http://opal-festival.com/vision.php" />
-	<meta property="og:image" content="http://opal-festival.com/img/facebook-share.png" />
+	<meta property="og:image" content="http://opal-festival.com/img/facebook-share-2019.png" />
 	<meta property="og:site_name" content="Opal Festival" />    
 
     <!-- http://humanstxt.org -->

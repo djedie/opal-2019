@@ -453,7 +453,17 @@ body {
         //@include size(auto, auto);
       }
     }
+    
+    .trains-visual{
+	position: absolute;
+    top: 20px;
+    right: -35px;
+    z-index: 3;
+    }        
   }
+  
+ 
+  
 }
 .home-block{
   padding: 60px 0;
