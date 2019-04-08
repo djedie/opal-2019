@@ -12,7 +12,7 @@
           <li><a href="#" target="_blank">Billetterie</a></li>
 <!--           <li><a href="http://opal-festival.com/wiki" target="_blank">Wiki</a></li> -->
           <li><a href="#" class="email">Contacte-nous</a></li>
-          <li><a href="https://projects.invisionapp.com/boards/ZR3LGQUB3W2#/" target="_blank">Kit press</a></li>
+          <li><a href="https://projects.invisionapp.com/boards/ZR3LGQUB3W2/" target="_blank">Kit press</a></li>
         </ul>
       </div>
       <div class="col-md-3">
