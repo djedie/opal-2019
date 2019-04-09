@@ -319,12 +319,12 @@ body {
 }
 .header{
   background-color: transparent;
-  overflow: hidden;
+//   overflow: hidden;
   position: relative;
 
   @include media-breakpoint-up(md){
     //min-height: 760px;
-    padding-top: 110px;
+    padding-top: 50px;
     @include gradient-vertical(#0f2552, #0a1c47);
   }
   &.header-page{
@@ -391,7 +391,7 @@ body {
   }
   .main-logo{
     display: none;
-    margin: 0 0 30px;
+    margin: 0;
 
     @include media-breakpoint-up(md){
       display: block;
@@ -428,15 +428,35 @@ body {
 
   .owl{
     &:before{
-      background: transparent url(img/moon.svg) 0% 0%/auto 400px no-repeat;
+      background: transparent url(img/moon.png) 0% 0%/auto 100px no-repeat;
       content: "";
       display: block;
-      left: 100px;
       position: absolute;
-      top: -100px;
+      left: 630px;
+	  top: 200px;
       z-index: 1;
-      @include size(800px, 500px);
+      @include size(875px, 875px);
+      
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+	animation-name: moonzoom;
     }
+    
+    @keyframes moonzoom {
+	  from {
+	  	background-size: 100px;
+    	left: 630px;
+		top: 200px;
+	    }
+	
+	  to {
+	  	background-size: 875px;
+    	left: 130px;
+        top: -340px;
+	    }
+	}    
+    
     .owl-visual{
       position: relative;
       top: -10px;
@@ -445,9 +465,10 @@ body {
       @include media-breakpoint-up(md){
         @include absolute-center;
         //@include size(450px, auto);
+        top: 55%;
       }
       @include media-breakpoint-up(lg){
-        @include size(440px, auto);
+        @include size(550px, auto);
       }
       @include media-breakpoint-up(xl){
         //@include size(auto, auto);
@@ -456,10 +477,37 @@ body {
     
     .trains-visual{
 	position: absolute;
+/* 	état final
     top: 20px;
     right: -35px;
+*/
+	top: 80px;
+    right: 300px;  
     z-index: 3;
-    }        
+    transition: all 1s ease-in;
+    
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+	animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+	  from {
+		top: 80px;
+	    right: 300px;  
+	    }
+	
+	  to {
+		top: 20px;
+		right: -35px;
+	    }
+	}
+
+    .trains-visual:hover{
+    	transform: translate(600px,-40px);
+	} 
+       
   }
   
  

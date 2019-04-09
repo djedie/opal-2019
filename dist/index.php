@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Opal 2019 - Créé le Festival de tes Rêves</title>
+    <title>Opal 2019 - Crée le Festival de tes Rêves</title>
     <meta name="description" content="Créer ensemble un évènement culturel et artistique. Opal est un évènement, un mouvement, un moment, une construction collective où chacun est libre de s’exprimer, de créer, d’enseigner, d’apprendre, d’expérimenter et d’exercer." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -13,7 +13,7 @@
     
 	<!-- Open Graph data -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Opal 2019 - Créé le Festival de tes Rêves" />
+	<meta property="og:title" content="Opal 2019 - Crée le Festival de tes Rêves" />
 	<meta property="og:description" content="Créer ensemble un évènement culturel et artistique. Opal est un évènement, un mouvement, un moment, une construction collective où chacun est libre de s’exprimer, de créer, d’enseigner, d’apprendre, d’expérimenter et d’exercer." />
 	<meta property="og:url" content="http://opal-festival.com/" />
 	<meta property="og:image" content="http://opal-festival.com/img/facebook-share-2019.png" />
@@ -65,12 +65,12 @@
           </div>
           <div class=" col-md-7 col-lg-6 order-md-1">
             <h1 class="main-logo">
-              <img src="img/logo-couleur.png" class="d-none d-md-block" width="220" alt="Opal - 1 au 5 août 2019">
+              <img src="img/logo-couleur.png" class="d-none d-md-block" width="300" alt="Opal - 1 au 5 août 2019">
             </h1>
             <h2 class="baseline">Rejoins la communauté Opal</h2>
             <p class="text-center">et construis le festival de tes rêves</p>
             <div class="text-center">
-              <div><a href="#" target="_blank" class="btn btn-chevron">Prendre mon billet (bientôt)</a></div>
+              <div><a href="#" target="_blank" class="btn btn-chevron">Prendre mon billet (soon)</a></div>
               <div><a href="#" class="btn btn-chevron btn-outline popin-trigger">J'ai envie de participer</a></div>
             </div>
           </div>
