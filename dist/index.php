@@ -70,7 +70,7 @@
             <h2 class="baseline">Rejoins la communauté Opal</h2>
             <p class="text-center">et construis le festival de tes rêves</p>
             <div class="text-center">
-              <div><a href="#" target="_blank" class="btn btn-chevron">Prendre mon billet (soon)</a></div>
+              <div><a href="https://www.helloasso.com/associations/opal/evenements/opal-festival-2019" target="_blank" class="btn btn-chevron">Prendre mon billet</a></div>
               <div><a href="#" class="btn btn-chevron btn-outline popin-trigger">J'ai envie de participer</a></div>
             </div>
           </div>
@@ -122,7 +122,7 @@
                 <span class="avatar">
                   <img src="img/avatar-owl.png" srcset="img/avatar-owl@2x.png 2x" alt="Opal">
                 </span>
-                <span class="msg">C’est une communauté qui crée un festival participatif entièrement géré par les festivaliers. On sera 300 cette année. Y’a des concerts 🎵, des animations 🤹‍♂️, un bar avec 1000 litres de 🍻 à se partager, un kitchen camp 👨‍🍳… mais surtout des gens cools</span>
+                <span class="msg">C’est une communauté qui crée un festival participatif entièrement géré par les festivaliers. On sera 300 cette année. Y’a des concerts 🎵, des animations 🤹‍♂️, un bar avec 1000 litres de 🍻 et du 🍷 à se partager, un kitchen camp 👨‍🍳… mais surtout des gens cools</span>
               </li>
               <li class="bubble-right">
                 <span class="avatar">

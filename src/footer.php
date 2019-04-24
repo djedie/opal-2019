@@ -6,10 +6,10 @@
       </div>
       <div class="col-md-9 col-lg-6">
         <ul class="list-unstyled links-list">
-          <li><a href="/vision.php">La vision d'Opal</a></li>
+          <li><a href="https://trello.com/c/QhFeEUfq/29-vision" target="_blank">La vision d'Opal</a></li>
           <li><a href="/photos.php">Les photos 2017-2018</a></li>
           <li><a href="https://trello.com/c/kY8EKSYo/35-faq" target="_blank">FAQ</a></li>
-          <li><a href="#" target="_blank">Billetterie</a></li>
+          <li><a href="https://www.helloasso.com/associations/opal/evenements/opal-festival-2019" target="_blank">Billetterie</a></li>
 <!--           <li><a href="http://opal-festival.com/wiki" target="_blank">Wiki</a></li> -->
           <li><a href="#" class="email">Contacte-nous</a></li>
           <li><a href="https://projects.invisionapp.com/boards/ZR3LGQUB3W2/" target="_blank">Kit press</a></li>
